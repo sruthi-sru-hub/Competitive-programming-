@@ -1,0 +1,11 @@
+
+
+A, B = map(int, input().split())
+
+while B != 0:
+    s = A ^ B
+    carry = (A & B) << 1
+    A = s
+    B = carry
+
+print(A)
